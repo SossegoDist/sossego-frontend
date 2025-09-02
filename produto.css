@@ -1,0 +1,32 @@
+/* Estilo para o container principal da página de produto */
+#detalhe-produto-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: var(--cor-branca);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* O resto dos estilos de detalhe do produto (.produto-info, etc.)
+   agora estão no style.css para serem usados também pelo Modal.
+   Este arquivo agora só cuida do layout maior da página. 
+*/
+
+/* Seção de produtos relacionados */
+#produtos-relacionados {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+#produtos-relacionados h2 {
+    font-size: 1.8rem;
+    color: var(--cor-secundaria);
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}

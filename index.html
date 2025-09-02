@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sossego Distribuidora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Sossego</h1>
+            <nav class="header-icons">
+                <a href="#" aria-label="Notificações"><i class="fas fa-bell"></i></a>
+                <a href="#" aria-label="Minha Conta"><i class="fas fa-user"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="vitrine">
+            <div class="filtros-container">
+                <div class="filtros-top-row">
+                    <input type="search" id="input-busca" placeholder="🔎 Buscar por nome...">
+                    <div class="ordenacao-container">
+                        <label for="seletor-ordenacao">Ordenar por:</label>
+                        <select id="seletor-ordenacao">
+                            <option value="padrao">Padrão</option>
+                            <option value="preco-asc">Menor Preço</option>
+                            <option value="preco-desc">Maior Preço</option>
+                            <option value="nome-asc">Nome (A-Z)</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="botoes-categoria" class="botoes-filtro">
+                    </div>
+            </div>
+            </section>
+    </main>
+
+    <aside class="carrinho">
+        <div class="carrinho-header">
+            <h2>Meu Carrinho</h2>
+            <button id="btn-minimizar-carrinho" aria-label="Minimizar Carrinho">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        <div id="carrinho-itens">
+            <p>Seu carrinho está vazio.</p>
+        </div>
+        <div class="carrinho-total">
+            <h3>Total: <span id="total-carrinho">R$ 0,00</span></h3>
+        </div>
+        <div class="carrinho-botoes">
+            <button id="btn-limpar-carrinho">Limpar Carrinho</button>
+            <button id="btn-finalizar-compra">Finalizar Compra</button>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="footer-container">
+            <nav class="footer-links">
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+                <a href="#">Termos de Serviço</a>
+                <a href="#">Política de Privacidade</a>
+            </nav>
+            <p>&copy; 2025 Sossego Distribuidora. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <div id="toast-container"></div>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div id="modal-content" class="modal-content">
+            </div>
+    </div>
+
+    <script src="shared.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

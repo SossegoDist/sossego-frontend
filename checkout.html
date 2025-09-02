@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - Sossego</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+    <script src="https://widget.mercuryo.io/embed.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1><a href="index.html" style="color:white; text-decoration:none;">Sossego</a></h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="checkout-container">
+            <h1>Finalizar Pedido</h1>
+            <div class="checkout-layout">
+                <div class="resumo-pedido">
+                    <h2>Resumo do Pedido</h2>
+                    <div id="lista-itens-resumo">
+                        </div>
+                    <div class="resumo-total">
+                        <strong>Total:</strong>
+                        <strong id="total-resumo">R$ 0,00</strong>
+                    </div>
+                </div>
+                <div class="dados-pagamento">
+                    <h2>Seus Dados</h2>
+                    <form>
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome">
+
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" placeholder="123.456.789-00">
+                        
+                        <h2>Pagamento</h2>
+                        <p>Ao clicar no botão abaixo, você será redirecionado para o nosso parceiro de pagamentos seguro para concluir a compra.</p>
+                        <button type="button" id="btn-pagar">Pagar com Mercuryo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="carrinho">
+        <div class="carrinho-header">
+            <h2>Meu Carrinho</h2>
+            <button id="btn-minimizar-carrinho" aria-label="Minimizar Carrinho">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        <div id="carrinho-itens">
+            <p>Seu carrinho está vazio.</p>
+        </div>
+        <div class="carrinho-total">
+            <h3>Total: <span id="total-carrinho">R$ 0,00</span></h3>
+        </div>
+        <div class="carrinho-botoes">
+            <button id="btn-limpar-carrinho">Limpar Carrinho</button>
+            <button id="btn-finalizar-compra">Finalizar Compra</button>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Sossego Distribuidora. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="toast-container"></div>
+    <script src="shared.js"></script>
+    <script src="checkout.js"></script>
+</body>
+
+</html>

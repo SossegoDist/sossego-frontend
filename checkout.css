@@ -1,0 +1,78 @@
+.checkout-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: var(--cor-branca);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-layout {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.resumo-pedido {
+    flex: 1;
+    min-width: 300px;
+}
+
+.dados-pagamento {
+    flex: 1.5;
+    min-width: 300px;
+}
+
+.resumo-pedido h2,
+.dados-pagamento h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.item-resumo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.item-resumo span:first-child {
+    color: #555;
+}
+
+.resumo-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: var(--cor-sucesso);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
